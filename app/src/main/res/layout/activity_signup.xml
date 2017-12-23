@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sh_polak.udemyadapter.SignupActivity">
+    <EditText
+        android:id="@+id/nametext"
+        android:hint="enter your user name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/passwordtext"
+        android:hint="enter password"
+        android:layout_below="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/confirm"
+        android:layout_below="@+id/passwordtext"
+        android:hint="confirm the password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/adduser"
+        android:layout_below="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registerd"
+        android:text="Finish"/>
+
+</RelativeLayout>
